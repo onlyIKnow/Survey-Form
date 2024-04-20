@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<title>Survey Form</title>
+</head>
+<body>
+	<div id="header-container">
+		<h1 id="title">SURVEY FORM</h1>
+		<h2>Understanding Student Well-Being and Health Habits</h2>
+		<p id="description">We appreciate your participation in our research. Our short survey takes about <b>5 minutes</b>. Thank you for your time and honest answers.</p>
+	</div>
+
+	<form id="survey-form">
+		<fieldset id="personal-info">
+			<legend>Personal Information</legend>
+
+			<div class="student-details">
+				
+				<div>
+				<label for="student-id-label">Student ID Number: </label>
+				<input required id="student-id-label" type="text" name="student_id" placeholder="xx-xxxx-xxx" pattern="\d{2}-\d{4}-\d{3}">
+				</div>
+
+				<div>
+				<label for="course-label">Course: </label>
+				<input required id="course-label" type="text" name="course" placeholder="e.g. BSCS">
+				</div>
+
+				<div>
+				<label id="number-label">Year Level: </label>
+				<input required id="number" type="number" name="year_level" min="1" max="4" placeholder="e.g. 2">
+				</div>
+
+			</div>
+
+			<div class="name-fields">
+				
+				<div>
+					<label for="last-name-label">Last Name:</label>
+					<input required id="last-name-label" type="text" name="last_name">
+				</div>
+
+				<div>
+					<label for="first-name-label">First Name: </label>
+					<input required id="first-name-label" type="text" name="first_name">
+				</div>
+				
+
+				<div>
+                    <label id="name-label">Suffix: </label>
+                    <input required id="name" type="text" name="suffix" placeholder="n/a if not applicable" >
+                </div>
+
+                <div>
+                	<label for="middle-initial-label">M.I.: </label>
+                	<input required id="middle-initial-label" type="text" name="middle_initial">
+                </div>
+
+			</div>
+
+			<div class="demographics">
+				<div>
+					<label id="sex-label">Sex: </label>
+					<select required id="dropdown" name="sex">
+						<option value="">Selct one</option>
+						<option value="option1">Female</option>
+						<option value="option2">Male</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="birthdate-label">Birthdate: </label>
+					<input required id="birthdate-label" type="date" name="birthdate">
+				</div>
+
+				<div>
+					<label for="age-label">Age: </label>
+					<input required id="age-label" type="number" name="age" min="10" max="99">
+				</div>
+			</div>
+
+			<div class="contact-details">
+				
+				<div>
+					<label id="email-label">Email: </label>
+					<input required id="email" type="email" name="email" placeholder="jane.villanueva@hotmail.com">
+				</div>
+
+				<div>
+					<label for="mobile-number-label">Mobile Number: </label>
+					<input required id="mobile-number-label" type="tel" name="mobile_number">
+				</div>
+			</div>
+		</fieldset>
+
+		<hr>
+
+		<fieldset id="stress-level">
+			<legend>Stress Level</legend>
+
+			<div class="stress-rate">
+				<label for="stress-rate-label">How would you rate your current level of stress? </label>
+				<select required id="stress-rate-label" name="stress_rate">
+					<option value="">Select one</option>
+					<option value="option1">Low</option>
+					<option value="option2">Moderate</option>
+					<option value="option3">High</option>
+					<option value="option4">Very High</option>
+				</select>
+			</div>
+		</fieldset>
+		<hr id="hr-stress-sleep">
+
+		<fieldset id="sleeping-hours">
+		  <legend>Sleep Hours</legend>
+		  <div>
+		    <label for="first-radio-option" class="radio-option">
+		      <input id="first-radio-option" type="radio" name="hours" value="less-than-5"> Less than 5 hours
+		    </label>
+
+		    <label for="second-radio-option" class="radio-option">
+		      <input id="second-radio-option" type="radio" name="hours" value="5-6"> 5-6 hours
+		    </label>
+
+		    <label for="third-radio-option" class="radio-option">
+		      <input id="third-radio-option" type="radio" name="hours" value="6-7"> 6-7 hours
+		    </label>
+
+		    <label for="fourth-radio-option" class="radio-option">
+		      <input id="fourth-radio-option" type="radio" name="hours" value="7-8"> 7-8 hours
+		    </label>
+
+		    <label for="fifth-radio-option" class="radio-option">
+		      <input id="fifth-radio-option" type="radio" name="hours" value="more-than-8"> More than 8 hours
+		    </label>
+		  </div>
+		</fieldset>
+
+		<hr>
+
+		<fieldset id="habits-checkbox">
+			<legend>Habits</legend>
+            <div>
+                <label>Which of the following healthy habits do you regularly practice? <i>(Select all that apply)</i></label>
+                
+                <div>
+                    <label class="checkbox-options" for="checkbox1">
+                        <input id="checkbox1" type="checkbox" name="habits" value="option1">Regular exercise
+                    </label>
+
+                    <label class="checkbox-options" for="checkbox2">
+                        <input id="checkbox2" type="checkbox" name="habits" value="option2">Healthy eating
+                    </label>
+
+                    <label class="checkbox-options" for="checkbox3">
+                        <input id="checkbox3" type="checkbox" name="habits" value="option3">Meditation or mindfulness
+                    </label>
+
+                    <label class="checkbox-options" for="checkbox4">
+                        <input id="checkbox4" type="checkbox" name="habits" value="option4">Sufficient hydration
+                    </label>
+
+                    <label class="checkbox-options" for="checkbox5">
+                        <input id="checkbox5" type="checkbox" name="habits" value="option5">Adequate sleep
+                    </label>
+
+                    <label class="checkbox-options" for="checkbox6">
+                        <input id="checkbox6" type="checkbox" name="habits" value="option6">Others
+                    </label>
+                </div>
+
+                <label class="checkbox-options" for="other-description">
+                    <input id="other-description" type="text" name="habits" placeholder="Please specify">
+                </label>
+            </div>
+		</fieldset>
+		<hr>
+
+		<fieldset class="university-wellness-support">
+			<legend>University Support</legend>
+
+			<div class="university-support">
+				<label for="university-support-label">Do you feel that the university provides adequate resources and support student wellness? Why?</label>
+				<textarea id="university-support-label" placeholder="Yes/No, because.."></textarea>
+			</div>
+		</fieldset>
+		<hr>
+
+		<div class="privacy-agreement">
+		    <p id="consent">By checking the box below, you consent to the collection and processing of your personal data for the purposes described in this survey. Your information will be used solely for research and analysis and will not be shared within third parties.</p>
+
+			<input required id="agree-checkbox" type="checkbox" name="agree" value="agree">
+			<label id="agreement">I agree and allow the use of my information for the purpose of this survey.</label>
+		</div>
+
+
+		<button id="submit" type="submit">SUBMIT</button>
+	</form>
+</body>
+</html>

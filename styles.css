@@ -1,0 +1,306 @@
+#header-container {
+	background: #794040;
+	max-width: 100%;
+	padding: 50px 0 50px 0;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-size: 32px;
+	letter-spacing: 1px;
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 3px;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+#description {
+	color: whitesmoke;
+	text-align: justify;
+	font-style: italic;
+	padding: 20px 80px 0 80px;
+	font-size: 13px;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+
+form {
+	background-color: #f5f5f5;
+	max-width: 650px;
+  	margin: 0 auto;
+  	padding: 4em ;
+  	padding-top: 3em;
+  	margin-top: 3em;
+}
+
+fieldset {
+	border: none;
+	margin: 1px;
+}
+
+legend {
+	color: #794040;
+	font-weight: bolder;
+	margin-bottom: 1em;
+}
+
+label {
+	color: #0e0d14;
+}
+
+
+.student-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.student-details div {
+  display: flex;
+  flex-direction: column;
+}
+
+.student-details label {
+	white-space: nowrap;
+}
+
+#student-id-label {
+	width: 270px;
+}
+
+#course-label {
+	width: 200px;
+}
+
+#number-label {
+	width: 100px;
+}
+
+.name-fields {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.name-fields div {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-fields label {
+  white-space: nowrap;
+}
+
+#last-name-label {
+	width: 180px;
+}
+
+#first-name-label {
+	width: 170px;
+}
+
+#name {
+	width: 145px;
+}
+
+#middle-initial-label {
+	width: 55px;
+}
+
+.demographics {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.demographics div {
+  display: flex;
+  flex-direction: column;
+}
+
+.demographics label {
+	white-space: nowrap;
+}
+
+#dropdown {
+	width: 180px;
+}
+
+#birthdate-label {
+	width: 290px;
+}
+
+#age-label {
+	width: 100px;
+}
+
+.contact-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 15px;
+}
+
+.contact-details div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-details label {
+	white-space: nowrap;
+}
+
+#email-label {
+	width: 300px;
+}
+
+#mobile-number-label {
+	width: 290px;
+}
+
+input[type=text],
+input[type=number],
+input[type=date],
+input[type=tel],
+input[type=email], textarea{
+  padding: 5px 5px;
+  margin: 3px 0;
+  box-sizing: border-box;
+  border: 3px solid #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  background-color: #ffffff; 
+  color: #2a2a2a;
+}
+
+select {
+  padding: 5px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  background-color: #ffffff;
+  color: #2a2a2a;
+}
+
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=date]:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
+textarea:focus {
+	border: 3px solid #d7d7d7;
+	color:#2a2a2a;
+}
+
+select:focus {
+	border: 3px solid #d7d7d7;
+}
+
+
+hr, #hr-stress-sleep {
+	height: 1px;
+	background-color: #545454;
+	border: none;
+	width: 610px;
+	margin-left: 13px;
+	margin-top: 30px;
+	margin-bottom: 32px;
+}
+
+.radio-option {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.radio-option input[type="radio"] {
+	margin: 2px 10px 6px 15px; 
+}
+
+#first-radio-option {
+	margin-top: 15px;
+}
+
+
+.checkbox-options {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.checkbox-options input[type="checkbox"] {
+	margin: 2px 10px 6px 15px;
+}
+
+#checkbox1 {
+	margin-top: 20px;
+}
+
+.checkbox-options #other-description {
+	padding: 1px 3px;
+	margin-left: 38px;
+} 
+
+textarea {
+	display: block;
+	margin-top: 10px;
+	padding: 15px;
+	resize: vertical;
+	margin-bottom: 5px;
+}
+
+
+#consent {
+	font-size: 13px;
+	text-align: justify;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+#agreement {
+	font-size: 13px;
+	color: #9d1d1d;
+}
+
+#agree-checkbox {
+	margin-left: 12px;
+	margin-bottom: 60px;
+
+}
+
+#submit {
+    display: block; 
+
+    margin: 0 auto; 
+    width: 130px;
+    height: 40px; 
+    background-color: #794040;
+    border: none;
+    color: #f4f4f4;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 12px;
+    outline: none;
+    transition: background-color 0.5s, color 0.5s; 
+    cursor: pointer; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+#submit:hover {
+    background-color: #ffffff;
+    color: #794040;
+}
