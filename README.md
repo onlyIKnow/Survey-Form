@@ -14,5 +14,5 @@ This project is not licensed, which means it is released into the public domain 
 
 
 **Contact Information**
-For any questions, feedback, or if you're a beginner looking for a learning partner, feel free to reach out to me on Reddit. My Reddit username is u/Prudent-Aide-8110 (onlyIKNow). 
+For any questions, feedback, or if you're a beginner looking for a learning partner, feel free to reach out to me on Reddit. My Reddit username is u/Prudent-Aide-8110 (onlyIKnow). 
 
